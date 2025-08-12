@@ -8,7 +8,7 @@ let page: Page;
 let pageManager: PageManager;
 
 Before(async function () {
-   browserInstance = await chromium.launch({headless: false});
+   browserInstance = await chromium.launch({headless: true});
    context = await browserInstance.newContext();
    page = await context.newPage();
    pageManager = new PageManager(page);
