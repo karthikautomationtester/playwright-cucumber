@@ -1,0 +1,14 @@
+{
+    "default": {
+        "format": [
+            "json:reports/report.json",
+            "html:reports/report.html"
+        ],
+        "requireModule": [
+            "ts-node/register"
+        ],
+        "require": [
+            "steps/**/*.ts"
+        ]
+    }
+}
